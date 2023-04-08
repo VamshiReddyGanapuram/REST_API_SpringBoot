@@ -22,6 +22,7 @@ public class DepartmentController {
 	public List<DepartmentResponse> getDepartments(){
 		List<Department> depts = dRepo.findAll();
 		
+		
 		List<DepartmentResponse> list = new ArrayList<>();
 		
 		depts.forEach(d ->{
